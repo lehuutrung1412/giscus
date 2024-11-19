@@ -70,7 +70,7 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
   );
 
   const shouldCreateDiscussion = data.isNotFound && !number;
-  const shouldShowBranding = !!data.discussion.url;
+  const shouldShowBranding = false;
 
   const shouldShowReplyCount =
     !data.error && !data.isNotFound && !data.isLoading && data.totalReplyCount > 0;
